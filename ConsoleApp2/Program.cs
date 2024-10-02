@@ -11,7 +11,7 @@ class RudeChatBot
 {
     private Dictionary<string, string> wordbank = new Dictionary<string, string>()
     {
-         { "hello", "\nhey there user....\n sooo ya gonna exit the program yet?\n" },
+         { "hello", "\nhey there user....\n ya gonna exit the program yet?\n" },
         { "weather", "\nthe weather is... wait why am i telling you just go out side and look dumbass.\n" },
         { "time", "\ni know you people dont touch grass and all but like... look outside.\n" },
         { "how are you", "\nnot great man, im a damn program.\n" },
