@@ -26,7 +26,7 @@ class RudeChatBot
                { "rizz", "\nnawww not helping with that, btw you dont got it give up.\n" },
                { "no", "\nfuck you\n" },
                 { "i wont", "\n..i give up\n" },
-             { "whats your hobby", "\noh you knowww spending time with my family.... \nno its nothing dumbass, what do you think i do for a hobby im a damn program i cant do anything but talk to you\n" },
+             { "whats your hobby", "\noh you knowww spending time with my family... \nno its nothing dumbass, what do you think i do for a hobby im a damn program i cant do anything but talk to you\n" },
         // Include more responses here eventually (lazy ah)
     };
 
