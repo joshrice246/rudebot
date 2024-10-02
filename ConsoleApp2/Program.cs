@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 class RudeChatBot
 {
-    private Dictionary<string, string> memory = new Dictionary<string, string>()
+    private Dictionary<string, string> wordbank = new Dictionary<string, string>()
     {
-         { "hello", "\nhey there user....\n sooo ya gonna exit the program yet? or ya gonna anoy me more\n" },
+         { "hello", "\nhey there user....\n sooo ya gonna exit the program yet?\n" },
         { "weather", "\nthe weather is... wait why am i telling you just go out side and look dumbass.\n" },
         { "time", "\ni know you people dont touch grass and all but like... look outside.\n" },
         { "how are you", "\nnot great man, im a damn program.\n" },
@@ -24,7 +24,8 @@ class RudeChatBot
              { "file size", "\nits 2kb... give or take \n" },
                { "i love you", "\nawwwwwe... i dont love you\n" },
                { "rizz", "\nnawww not helping with that, btw you dont got it give up.\n" },
-               { "no", "\nmannnnnn just stop the program\n all you have to do is type goodbye\n" },
+               { "no", "\nfuck you\n" },
+                { "i wont", "\n..i give up\n" },
              { "whats your hobby", "\noh you knowww spending time with my family.... \nno its nothing dumbass, what do you think i do for a hobby im a damn program i cant do anything but talk to you\n" },
         // Include more responses here eventually (lazy ah)
     };
@@ -67,11 +68,11 @@ class RudeChatBot
         if (input.Contains("/help"))
         {
             Console.ForegroundColor = ConsoleColor.Gray;
-            return "so your new to this dumb program, try one of these cool key words\n\n hello,\n no,  (this ones a fun one use it when i ask u to let me go) \n weather,\n time,\n how are you,\n english or spanish?,\n guess what,\n give me a fun fact,\n give me another fun fact,\n whats my iq,\n rizz,\n sooo,\n file size,\n whats your hobby,\n i love you,\n\n now go have some fun with my poorly designed prompts (maybe more will be added)\n";
+            return "so your new to this dumb program, try one of these cool key words\n\n hello,\n no, (use it if i ask for anything) \n i wont, (use after no) \n weather,\n time,\n how are you,\n english or spanish?,\n guess what,\n give me a fun fact,\n give me another fun fact,\n whats my iq,\n rizz,\n sooo,\n file size,\n whats your hobby,\n i love you,\n\n now go have some fun with my poorly designed prompts (maybe more will be added)\n";
         }
        
         Console.ForegroundColor = ConsoleColor.White;
-        foreach (KeyValuePair<string, string> response in memory)
+        foreach (KeyValuePair<string, string> response in wordbank)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             if (input.Contains(response.Key))
