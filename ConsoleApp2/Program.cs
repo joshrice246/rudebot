@@ -92,8 +92,8 @@ class Program
 {
     static void Main()
     {
-        RudeChatBot myrudeAI = new RudeChatBot();
-        myrudeAI.Start();
+        RudeChatBot myrudebot = new RudeChatBot();
+        myrudebot.Start();
     }
     
 }
